@@ -3,6 +3,7 @@ import { IProfile } from "../user";
 import { IArticleResponse } from "./article";
 
 export const MediaURL = '/-/media';
+export type IMediaItem = IArticleResponse;
 export type IMediaRequest = {
   tag: string | number,
   category: number,
@@ -14,7 +15,7 @@ export type IMediaResponse = {
   total: number,
   page: number,
   size: number,
-  dataSource: IArticleResponse[],
+  dataSource: IMediaItem[],
 }
 
 export type Props = {
