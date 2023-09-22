@@ -9,8 +9,8 @@ export interface IProfile {
   thirdpart: boolean,
   thirthpart_name: string,
   website: string,
-  gmtc: string,
-  gmtm: string,
+  gmtc: string | Date,
+  gmtm: string | Date,
 }
 
 export interface IUser {
