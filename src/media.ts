@@ -8,6 +8,7 @@ export interface IMedia {
   count: number,
   description: string,
   date: string | Date,
+  modified: string | Date,
   category: {
     id: number,
     name: string,

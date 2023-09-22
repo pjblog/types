@@ -1,6 +1,6 @@
 {
   "name": "@pjblog/types",
-  "version": "1.0.4",
+  "version": "1.0.5",
   "description": "JavaScript Private Package Manager, Registry &amp; Website",
   "main": "dist/index.js",
   "scripts": {
