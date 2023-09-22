@@ -1,0 +1,17 @@
+{
+  "name": "@pjblog/types",
+  "version": "1.0.0",
+  "description": "JavaScript Private Package Manager, Registry &amp; Website",
+  "main": "dist/index.js",
+  "scripts": {
+    "build": "rm -rf ./dist && tsc -d"
+  },
+  "files": [
+    "dist"
+  ],
+  "license": "MIT",
+  "devDependencies": {
+    "ts-node": "^10.9.1",
+    "typescript": "^5.1.6"
+  }
+}
