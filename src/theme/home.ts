@@ -1,4 +1,4 @@
-import { IMedia } from "../media";
+import { IMeta } from "../meta";
 import { IProfile } from "../user";
 import { IArticleResponse } from "./article";
 
@@ -18,7 +18,7 @@ export type IMediaResponse = {
 }
 
 export type Props = {
-  meta: IMedia,
+  meta: IMeta,
   profile: IProfile,
   query: Partial<IMediaRequest>,
 }
