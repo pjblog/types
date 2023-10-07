@@ -1,5 +1,5 @@
 import { ThemeBaseProps } from "./base";
 
-export interface Props extends ThemeBaseProps<'notfound'> {
+export interface Props extends Omit<ThemeBaseProps, 'profile'> {
   url: string,
 }

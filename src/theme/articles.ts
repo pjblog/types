@@ -15,7 +15,7 @@ export type IArticlesResponse = {
   dataSource: IArticleResponse[],
 }
 
-export interface Props extends ThemeBaseProps<'articles'> {
+export interface Props extends ThemeBaseProps {
   query: Partial<IArticlesRequest>,
   data: IArticlesResponse,
 }

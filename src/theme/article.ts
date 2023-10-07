@@ -6,7 +6,7 @@ export type IArticleResponse = IMedia & {
   article: IArticle,
 }
 
-export interface Props extends ThemeBaseProps<'article'> {
+export interface Props extends ThemeBaseProps {
   query: {
     page: number,
   },

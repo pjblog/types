@@ -6,4 +6,3 @@ export * as Close from './close';
 export * as NotFound from './notfound';
 export * as ServerError from './error';
 export * as Html from './html';
-export { Pages } from './base';

@@ -1,7 +1,6 @@
-import { IMeta } from "../meta";
+import { ThemeBaseProps } from "./base";
 
-export interface Props {
-  meta: IMeta,
+export interface Props extends Omit<ThemeBaseProps, 'profile'> {
   dev?: boolean,
   stylesheets: string[],
   scriptLinks: string[],

@@ -16,7 +16,7 @@ export type IMediaResponse = {
   dataSource: IMediaItem[],
 }
 
-export interface Props extends ThemeBaseProps<'home'> {
+export interface Props extends ThemeBaseProps {
   query: Partial<IMediaRequest>,
   data: IMediaResponse,
 }
