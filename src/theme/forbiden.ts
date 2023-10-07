@@ -1,7 +1,7 @@
-import { IMeta } from "../meta";
-import { IProfile } from "../user";
+import { IUser } from "../user";
+import { ThemeBaseProps } from "./base";
 
-export type Props = {
-  meta: IMeta,
-  profile: IProfile,
+export interface Props extends ThemeBaseProps<'forbiden'> {
+  template: 'forbiden',
+  user: IUser,
 }

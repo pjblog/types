@@ -1,17 +1,14 @@
 import { IArticle } from "../article";
 import { IMedia } from "../media";
-import { IMeta } from "../meta";
-import { IProfile } from "../user";
+import { ThemeBaseProps } from "./base";
 
-export const ArticleURL = (code: string) => `/-/article/${code}`;
 export type IArticleResponse = IMedia & {
   article: IArticle,
 }
 
-export type Props = {
-  meta: IMeta,
-  profile: IProfile,
+export interface Props extends ThemeBaseProps<'article'> {
   query: {
     page: number,
   },
+  data: IArticleResponse,
 }

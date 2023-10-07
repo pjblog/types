@@ -1,9 +1,6 @@
-import { IMeta } from "../meta";
-import { IProfile } from "../user";
+import { ThemeBaseProps } from "./base";
 
-export type Props = {
+export interface Props extends ThemeBaseProps<'error'> {
   status: number,
   message: string,
-  meta: IMeta,
-  profile: IProfile,
 }

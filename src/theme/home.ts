@@ -1,8 +1,6 @@
-import { IMeta } from "../meta";
-import { IProfile } from "../user";
 import { IArticleResponse } from "./article";
+import { ThemeBaseProps } from "./base";
 
-export const MediaURL = '/-/media';
 export type IMediaItem = IArticleResponse;
 export type IMediaRequest = {
   tag: string | number,
@@ -18,8 +16,7 @@ export type IMediaResponse = {
   dataSource: IMediaItem[],
 }
 
-export type Props = {
-  meta: IMeta,
-  profile: IProfile,
+export interface Props extends ThemeBaseProps<'home'> {
   query: Partial<IMediaRequest>,
+  data: IMediaResponse,
 }

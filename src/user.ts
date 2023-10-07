@@ -1,9 +1,5 @@
-export interface IProfile {
+export interface IProfile extends IUser {
   id: number,
-  account: string,
-  nickname: string,
-  email: string,
-  avatar: string,
   forbiden: boolean,
   level: number,
   thirdpart: boolean,

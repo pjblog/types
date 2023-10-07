@@ -4,3 +4,4 @@ export * from './article';
 export * from './media';
 export * from './tag';
 export * from './theme';
+export * from './entry';

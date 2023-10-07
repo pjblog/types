@@ -1,9 +1,6 @@
-import { IArticle } from "../article";
-import { IMedia } from "../media";
-import { IMeta } from "../meta";
-import { IProfile } from "../user";
+import { ThemeBaseProps } from "./base";
+import { IArticleResponse } from './article';
 
-export const ArticlesURL = '/-/article';
 export type IArticlesRequest = {
   tag: string | number,
   category: number,
@@ -15,13 +12,10 @@ export type IArticlesResponse = {
   total: number,
   page: number,
   size: number,
-  dataSource: (IMedia & {
-    article: IArticle
-  })[],
+  dataSource: IArticleResponse[],
 }
 
-export type Props = {
-  meta: IMeta,
-  profile: IProfile,
+export interface Props extends ThemeBaseProps<'articles'> {
   query: Partial<IArticlesRequest>,
+  data: IArticlesResponse,
 }
