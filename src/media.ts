@@ -9,10 +9,17 @@ export interface IMedia {
   description: string,
   date: string | Date,
   modified: string | Date,
+  type: MEDIA_TYPE,
   category: {
     id: number,
     name: string,
   },
   author: IUser,
   tags?: ITag[],
+}
+
+export enum MEDIA_TYPE {
+  ARTICLE,
+  PICTURE,
+  VIDEO,
 }
