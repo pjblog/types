@@ -1,5 +1,6 @@
 import { ThemeBaseProps } from "./base";
 import { IArticleResponse } from './article';
+import { ICategory } from "../category";
 
 export type IArticlesRequest = {
   tag: string | number,
@@ -18,4 +19,5 @@ export type IArticlesResponse = {
 export interface Props extends ThemeBaseProps {
   query: Partial<IArticlesRequest>,
   data: IArticlesResponse,
+  categories: ICategory[],
 }

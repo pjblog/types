@@ -1,3 +1,4 @@
+import { ICategory } from "../category";
 import { IArticleResponse } from "./article";
 import { ThemeBaseProps } from "./base";
 
@@ -19,4 +20,5 @@ export type IMediaResponse = {
 export interface Props extends ThemeBaseProps {
   query: Partial<IMediaRequest>,
   data: IMediaResponse,
+  categories: ICategory[],
 }
