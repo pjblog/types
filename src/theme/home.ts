@@ -18,6 +18,7 @@ export type IMediaResponse = {
 }
 
 export interface Props extends ThemeBaseProps {
+  status: 200,
   query: Partial<IMediaRequest>,
   data: IMediaResponse,
   categories: ICategory[],

@@ -17,6 +17,7 @@ export type IArticlesResponse = {
 }
 
 export interface Props extends ThemeBaseProps {
+  status: 200,
   query: Partial<IArticlesRequest>,
   data: IArticlesResponse,
   categories: ICategory[],

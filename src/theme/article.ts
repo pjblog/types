@@ -8,6 +8,7 @@ export type IArticleResponse = IMedia & {
 }
 
 export interface Props extends ThemeBaseProps {
+  status: 200,
   query: {
     page: number,
   },
